@@ -1,7 +1,7 @@
 function multiplyNumeric(obj) {
     for (const objKey in obj) {
         if (typeof obj[objKey] == "number") {
-           obj[objKey] *= 2;
+            obj[objKey] *= 2;
         }
     }
 }

@@ -1,5 +1,3 @@
-"use strict"
-
 function Calculator() {
     this.read = function () {
         this.a = +prompt("enter 1 value");

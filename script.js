@@ -1,24 +1,14 @@
 "use strict"
+function Accumulator(startingValue) {
+    this.value = startingValue;
 
-function Calculator() {
     this.read = function () {
-        this.a = +prompt("enter 1 value");
-        this.b = +prompt("enter 2 value");
-    };
-    this.sum = function () {
-        return this.a + this.b;
-    };
-    this.mul = function () {
-        return this.a * this.b;
+       return this.value += +prompt('new value', 0);
     };
 }
 
-let calculator = new Calculator();
+let accumulator = new Accumulator(1); // начальное значение
+accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
 
-calculator.read()
-
-console.log("Sum=" + calculator.sum());
-console.log("Mul=" + calculator.mul());
-
-console.log(calculator);
-console.log(Calculator);
+alert(accumulator.value); // выведет сумму этих значений

@@ -77,3 +77,23 @@ admin["f"](); // Admin (нет разницы между использован�
 //
 // console.log(ladder.showStep())
 
+    function getRectangleArea() {
+        return  this.width * this.height;
+    }
+function getRectanglePerimetr() {
+    (this.width + this.height) * 2;
+}
+
+const square1 = {
+    width: 10,
+    height: 20,
+    getR: getRectangleArea,
+    getRectanglePerimetr: getRectanglePerimetr,
+}
+
+
+console.log(square1.getR());
+
+
+console.log(square1.getRectanglePerimetr());
+

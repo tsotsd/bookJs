@@ -1,6 +1,6 @@
-const timer = (deadline) => {
-    let time = deadline;
-    console.log(time);
-}
+const time = setTimeout(() => {
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+} }, 2000);
 
-timer(3);
+console.log(time)
